@@ -1,0 +1,13 @@
+.#{$prefix}-recent-post-list{
+    @extend %reset-ul;
+    @include border();
+    border-color: $color_light_gray;
+    padding: 0 15px;
+    .#{$prefix}-recent-feature-image-section{
+        position: relative;
+    }
+    .#{$prefix}-feature-post{
+        padding-top: 15px;
+    }
+    
+}

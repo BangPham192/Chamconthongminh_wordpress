@@ -1,0 +1,99 @@
+%nav-menu{
+    .menu{
+        >ul{
+            padding: 0;
+            .down-arrow{
+                >a{
+                    padding: 0px 30px 0 15px;
+                   
+                    &:after{
+                        content:'\f078';
+                    } 
+                }
+            }
+            .right-arrow{
+                >a{
+                    &:after{
+                        content:'\f054';
+                    } 
+                }
+            }
+         
+
+            li{
+                a{
+                    color: $color_black;
+                    &:hover{
+                        @extend %secondary-color;
+                    }
+                }
+                &.menu-item-has-children{
+                    a{
+                        position: relative; 
+                        &:after{
+                            display: block;
+                            position: absolute;
+                            right: 10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            font-family: fontAwesome;
+                        }
+                       
+                    }
+                }
+                .sub-menu{
+                    background-color: $color_light_gray;
+                    box-shadow: none;
+                    @include border-left();
+                    border-color: $color_dark_gray;
+                    a{
+                        @include border-top();
+                        border-color: $color_dark_gray;
+                        display: block;
+                        overflow: hidden;
+                        &:before{
+                            display: block;
+                            position: absolute;
+                            content:'';
+                            width: 3px;
+                            height: 100%;
+                            bottom: -100%;
+                            left: -1px;
+                            background-color: $color_primary;
+                            @include transition();
+
+                        }
+                        &:hover{
+                            &:before{
+                                bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            >li{
+                font-weight: $font_semi_bold;
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    padding: 0 15px;
+                    height: $nav_height;
+                    line-height: $nav_height;
+                }
+                >a{
+                    @include border-bottom(2px,solid);
+                    border-color: transparent;
+                    @include transition();
+                }
+                &:hover{
+                    >a{
+                        @extend %secondary-border;
+                        background-color: rgba(123,123,123,0.1);
+                    }
+                }
+               
+            }
+        }
+       
+    }
+}

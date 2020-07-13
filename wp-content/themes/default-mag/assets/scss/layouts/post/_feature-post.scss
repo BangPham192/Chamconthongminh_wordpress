@@ -1,0 +1,16 @@
+.#{$prefix}-featured-category-post-list{
+    padding-bottom: $inner-section-gap;
+  
+    .#{$prefix}-recent-post-list,
+    .#{$prefix}-title{
+        margin-top: $inner-section-gap;
+    }
+    .#{$prefix}-recent-post-list{
+        // box-shadow: 0 0 10px 5px $color_box_shadow;
+    }
+    .#{$prefix}-col-gap{
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+    }
+
+}

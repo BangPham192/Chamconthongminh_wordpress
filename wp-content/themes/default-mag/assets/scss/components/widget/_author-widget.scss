@@ -1,0 +1,29 @@
+.#{$prefix}-author-info{
+    .#{$prefix}-image-section{
+        width: 150px;
+        margin: 0 auto;
+        border-radius: 100%;
+    }
+    .#{$prefix}-description{
+        .#{$prefix}-widget-title{
+            color: rgb(123,123,123);
+            margin-top: $widget-padding;
+            margin-bottom: 0;
+        }
+        p{
+            margin-top: $widget-padding;
+            margin-bottom: 0;
+            text-align: justify;
+        }
+    } 
+    .#{$prefix}-social{
+        text-align: center;
+        padding-top: $widget-padding;
+        span{
+            margin-right: 3px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}

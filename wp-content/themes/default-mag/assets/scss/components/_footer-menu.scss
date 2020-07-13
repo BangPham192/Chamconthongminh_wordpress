@@ -1,0 +1,21 @@
+.#{$prefix}-footer-menu{
+    ul{
+        @extend %reset-ul;
+        @extend %clearfix;
+        li{
+            display: inline-block;
+            a{
+                display: inline-block;
+                padding-right: 15px;
+                font-weight: $font_semi_bold;
+            }
+            &:last-child{
+                a{
+                    padding-right: 0;
+                }
+            }
+
+        }
+
+    }
+}

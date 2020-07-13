@@ -1,0 +1,24 @@
+.#{$prefix}-footer-widget{
+    padding-bottom: 30px;
+    background-color: rgba($color_black,0.91);
+    color: $color_white;
+    .widget{
+        color: $color_white;
+        box-shadow: none;
+        padding: 30px 0 0;
+        a{
+            color: $color_white;
+        }
+        .widget-title{
+            font-size: 1.3rem;
+            padding-top: 0;
+        }
+        table{
+            caption{
+                padding-top: 0;
+            }
+        }
+       
+    }
+
+}

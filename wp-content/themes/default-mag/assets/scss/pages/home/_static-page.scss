@@ -1,0 +1,5 @@
+.#{$prefix}-home-static-page{
+    padding-bottom: 45px;
+    @include border-top();
+    border-color: $color_light_gray;
+}

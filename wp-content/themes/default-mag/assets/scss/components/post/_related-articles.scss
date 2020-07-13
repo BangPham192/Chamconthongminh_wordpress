@@ -1,0 +1,32 @@
+.#{$prefix}-related-articles{
+    .#{$prefix}-image-section{
+        position: relative;
+        overflow: hidden;
+        a{
+            display:block;
+            @include transition(transform,0.3s,ease);
+            @include backface();
+            &:hover{
+                transform: scale(1.1,1.1);
+            }
+        }
+    }
+    .#{$prefix}-description{
+        .#{$prefix}-post-title{
+            margin-bottom: 0;
+            margin-top: 10px;
+            a{
+                @include line-limit(3);
+            }
+        }
+        .#{$prefix}-caption{
+            padding-top: 10px;
+            font-weight: $font_semi_bold;
+            p{
+                &:last-child{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

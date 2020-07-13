@@ -1,0 +1,96 @@
+$slider-height: 50px;
+.#{$prefix}-ticker-pin-slider-section{
+    background-color: $color_light_gray;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -200px;
+    z-index: 9;
+    @include transition();
+    &.#{$prefix}-ticker-active{
+        &.show{
+            bottom: 0;
+        }
+    }
+    .#{$prefix}-ticker-close{
+        position: absolute;
+        left: -100%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        cursor: pointer;
+        @include media(lg){
+            left: 0;
+        }
+    }
+   .#{$prefix}-wrapper{
+       position: relative;
+   }
+    .#{$prefix}-section-title{
+        float: left;
+        padding: 0 10px;
+        position: relative;
+        height: $slider-height;
+        line-height: $slider-height;
+        z-index: 1;
+        margin: 0 0px 0 60px;
+        display: none;
+        @include media(lg){
+            display: block;
+        }
+        &:before,
+        &:after{
+            top: 0;
+            position: absolute;
+            width: 0;
+            height: 0;
+            display: block;
+            content: '';
+        }
+      
+        &:before{
+            left: -20px;
+            border-left: 20px solid transparent;
+            border-bottom: $slider-height solid $color_primary;
+        }
+        &:after{
+            border-top: $slider-height solid $color_primary;
+            border-right: 20px solid transparent;
+            right: -20px;
+        }
+    }
+    .#{$prefix}-ticker-pin-slider{
+        .slick-arrow{
+            display: none !important;
+        }
+    }
+}
+
+
+
+.#{$prefix}-ticker-open{
+    position: fixed;
+    bottom: 60px;
+    @include transition();
+    &.show{
+        left: 60px;
+    }
+    &.close{
+        left: -200px;
+    }
+
+    .#{$prefix}-plus-icon{
+        display: none;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: $color_white;
+        box-shadow: 0 0 5px 5px $color_box_shadow;
+        @include media(lg){
+            display: flex;
+        }
+        &:hover{
+            background-color: $color_light_gray;
+        }
+    }
+}

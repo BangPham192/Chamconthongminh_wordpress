@@ -1,0 +1,72 @@
+.night-mode{
+    body{
+        background-color: rgb(37,37,37);
+        color: $color_white;
+    }
+    .#{$prefix}-mobile-menu{
+        background-color: rgb(37,37,37);
+    }
+    a{
+        color: $color_white;
+        &:visited{
+            color: $color_white;
+        }
+        &:hover{
+          color: $color_secondary;
+        }
+
+        &.#{$prefix}-default-anchor-text{
+            color: $color_black;
+            &:visited{
+                color: $color_black;
+            }
+            &:hover{
+                color: $color_secondary;
+            }
+        }
+       
+    }
+    .#{$prefix}-logo p{
+        color: $color_white;
+    }
+    
+    
+    .#{$prefix}-box-shadow,.#{$prefix}-comments-section{
+        box-shadow:  none;
+    }
+    .widget{
+        box-shadow: none;
+    }
+    .#{$prefix}-single-page-post-section,.#{$prefix}-single-author-info{
+        .post-thumbnail,
+        .wp-block-image,
+        .#{$prefix}-author-avatar{
+          img{
+              box-shadow: none;
+          }
+        }
+    }
+    .theme-mode{
+        .fa-adjust{
+            &:before{
+                content: "\f042";
+            }
+        }
+    }
+    p{
+        a{
+            @extend %secondary-color;
+            &:hover{
+                @extend %primary-color;
+            }
+        }
+    }
+    
+}
+.theme-mode{
+    .fa-adjust{
+        &:before{
+            content: "\f186";
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.#{$prefix}-home-page-widget-style-1-section{
+    .#{$prefix}-col-3,
+    .#{$prefix}-col-4,
+    .#{$prefix}-col-5{
+        padding: 0 7.5px;
+    }
+    .#{$prefix}-col-3,
+    .#{$prefix}-col-4,
+    .#{$prefix}-col-5,
+    .#{$prefix}-full-post,
+    .#{$prefix}-widget-post-list-section{
+        flex:  0 0 100%;
+        max-width: 100%;
+        @include media(sm){
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    .#{$prefix}-col-3{
+        @include media(lg){
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+    .#{$prefix}-col-4{
+        @include media(sm){
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        @include media(lg){
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+        }
+    }
+    .#{$prefix}-col-5{
+        @include media(lg){
+            flex: 0 0 41.67%;
+            max-width: 41.67%;
+        }
+    }
+    
+    .#{$prefix}-widget-post-list-section{
+        @include border();
+        border-color: $color_light_gray;
+        padding: 0 15px;
+    }
+
+    .#{$prefix}-full-post{
+        min-height: 300px;
+    }
+   
+
+}
+.widget-area,
+.#{$prefix}-footer-widget,
+.#{$prefix}-offcanvas-sidebar-wrapper{
+    .#{$prefix}-home-page-widget-style-1-section{
+        padding-top: 15px;
+        .#{$prefix}-col-3,
+        .#{$prefix}-col-4,
+        .#{$prefix}-col-5,
+        .#{$prefix}-full-post,
+        .#{$prefix}-widget-post-list-section{
+            flex:  0 0 100%;
+            max-width: 100%;
+        }
+        .#{$prefix}-col-3,
+        .#{$prefix}-col-4,
+        .#{$prefix}-col-5,
+        .#{$prefix}-widget-post-list-section{
+            padding: 0 7.5px;
+        }
+    }
+    .#{$prefix}-widget-post-list-section{
+        @include border-left();
+        border-color: $color_light_gray;
+    }
+    .#{$prefix}-ad-image-section{
+        margin-top: 15px;
+        text-align: center;
+    }
+}

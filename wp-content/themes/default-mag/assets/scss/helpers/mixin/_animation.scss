@@ -1,0 +1,12 @@
+@mixin animation($animation){
+    -webkit-animation:$animation;
+    -o-animation:$animation;
+    -o-animation:$animation;
+    animation:$animation;
+}
+@include keyframes (spin) {
+    100% {
+     transform: rotate(360deg);
+    }
+  }
+  

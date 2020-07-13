@@ -1,0 +1,51 @@
+.#{$prefix}-post{
+    display: flex;
+    @include border-bottom();
+    border-color: $color_light_gray;
+    padding: 15px;   
+
+    .#{$prefix}-image-section{
+        flex: 0 0 100px;
+        max-width: 100px;
+        position: relative;
+        @include media(md){
+            flex: 0 0 60px;
+            max-width: 60px;
+        }
+        @include media(lg){
+            flex: 0 0 100px;
+            max-width: 100px;
+        }
+        a{
+            display: block;
+        }
+        
+    }
+    .#{$prefix}-description{
+        flex: 0 0 calc( 100% - 100px );
+        max-width: calc( 100% - 100px );
+        padding-left: 10px;
+        padding-right: 10px;
+      
+        @include media(md){
+            flex: 0 0 calc( 100% - 60px);
+            max-width: calc( 100% - 60px);
+        }
+        @include media(lg){
+            flex: 0 0 calc( 100% - 10px);
+            max-width: calc( 100% - 100px);
+        }
+        .#{$prefix}-article-category-title{
+            h4{
+                margin: 0;
+            }
+        }
+        .#{$prefix}-post-title{
+            margin: 0;
+            a{
+                @include line-limit(3);
+            }
+        }
+        
+    }
+}

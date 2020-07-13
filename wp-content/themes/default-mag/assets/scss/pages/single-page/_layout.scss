@@ -1,0 +1,75 @@
+#primary{
+    width: 100%;
+    @include media(md){
+        width: 70%;
+    }
+}
+#secondary{
+    width: 100%;
+    @include media(md){
+        width: 30%;
+    }
+    section{
+        margin-top: 30px;
+    }
+    .container{
+        padding: 0;
+    }
+    
+}
+
+.right-sidebar{
+    #primary{
+        float: left;
+        padding-right: 7.5px;
+        padding-left: 7.5px;
+        @include media(md){
+            padding-left: 0;
+            padding-right: 15px;
+        }
+    }
+    #secondary{
+        float: left;
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+        @include media(md){
+            padding-right: 0;
+            padding-left: 15px;
+        }
+    }
+}
+.left-sidebar{
+    #primary{
+        float: right;
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+        @include media(sm){
+            padding-right: 0;
+            padding-left: 15px;
+        }
+    }
+    #secondary{
+        float: left;
+        padding-right: 7.5px;
+        padding-left: 7.5px;
+        @include media(sm){
+            padding-left: 0;
+            padding-right: 15px;
+        }
+    }
+}
+.no-sidebar{
+    #primary{
+        width: 100%;
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+        @include media(md){
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    #secondary{
+       display: none;
+    }
+}
+    

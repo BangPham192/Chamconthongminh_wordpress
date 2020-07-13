@@ -1,0 +1,92 @@
+$ad-width: 728px;
+$ad-image-height: 90px;
+$ad-image-sm-height: 45px;
+
+.#{$prefix}-site-branding{
+    &.data-bg{
+        background-color: transparent;
+    }
+    .#{$prefix}-wrapper{
+        padding: 15px 7.5px;
+        @include media(sm){
+            padding: 30px 7.5px;
+        }
+        
+        @include media(lg){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .#{$prefix}-logo{
+            text-align: center;
+            padding: 0 7.5px;
+            @include media(lg){
+                flex: 0 0 calc( 100% - 728px);
+                max-width: calc( 100% - 728px);
+                text-align: inherit;
+            }
+            .#{$prefix}-image-wrapper{
+                display: block;
+                width: 260px;
+                max-width: 100%;
+            }
+            .site-title{
+                margin-top: 5px;
+                margin-bottom: 0;
+                line-height: 1;
+                a{
+                    font-size: 35px;
+                    font-weight: 800;
+                    font-family: $logo_font;
+                }
+                
+            }
+            .site-description{
+                margin: 0;
+            }
+        }
+        .#{$prefix}-ad{
+            padding: 15px 7.5px 0 7.5px;
+            text-align: center;
+            @include media(lg){
+                flex: $ad-width;
+                max-width: $ad-width;
+                padding-top: 0;
+                text-align: inherit;
+
+            }
+            a{
+                display: inline-block;
+                width: 100%; 
+                .data-bg{
+                    background-color: transparent;
+                    background-size: contain;
+                    @include transition(transform,1s,ease);
+                }
+             
+                &:hover{
+                    .data-bg{
+                        @include transform(scale(0.9));
+                    }
+                }
+            }
+            .#{$prefix}-ad-image{
+                height: $ad-image-sm-height;
+                overflow: hidden;
+                @include media(xs){
+                    height: $ad-image-height;
+                }
+            }
+        }
+
+    }
+    &.#{$prefix}-logo-center{
+        .#{$prefix}-logo{
+            flex: 0 0 100%; 
+            max-width: 100%;
+            text-align: center; 
+            padding: 15px 0;
+        }       
+    }
+}

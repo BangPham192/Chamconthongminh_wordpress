@@ -1,0 +1,25 @@
+.page-header{
+    .#{$prefix}-title{
+        margin-top: 30px;
+    }
+}
+.#{$prefix}-archive-post-list{
+    .#{$prefix}-archive-post{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 7.5px;
+        margin-top: 30px;
+        margin-bottom: 0;
+        @include media(xs){
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    .posts-navigation{
+        margin: 0;
+    }
+    .#{$prefix}-pagination{
+        margin-top: 30px;
+        padding: 0 7.5px;
+    }
+}

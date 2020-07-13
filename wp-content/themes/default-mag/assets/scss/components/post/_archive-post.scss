@@ -1,0 +1,43 @@
+.#{$prefix}-archive-post{
+    .#{$prefix}-wrapper{
+        @include border();
+        border-color: $color_light_gray;
+    }
+    .#{$prefix}-image-section{
+        overflow: hidden;
+        position: relative;
+        background-color: $color_gray;
+        img{
+            @include transition(transform,0.3s,linear);
+            @include backface();
+            &:hover{
+                transform: scale(1.1,1.1);
+            }
+        }
+    }
+    .entry-header,
+    .entry-content{
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0;
+    }
+    .entry-header{
+        padding-top: 5px;
+        .entry-title{
+            margin-top: 10px;
+            margin-bottom: 0;
+            a{
+                @include line-limit(3);
+            }
+        }
+
+    }
+    .entry-content{
+        padding-bottom: 15px;
+        p{
+            margin-top: 10px;
+            margin-bottom: 0;
+    
+        }
+    }
+}

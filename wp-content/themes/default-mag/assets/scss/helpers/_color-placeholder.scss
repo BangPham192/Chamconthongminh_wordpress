@@ -1,0 +1,32 @@
+%secondary-color{
+    color: $color_secondary;
+}
+%primary-color{
+    color: $color_primary;
+}
+
+%primary-border{
+    border-color: $color_primary;
+}
+%secondary-border{
+    border-color: $color_secondary;
+}
+
+%primary-bg{
+    background-color: $color_primary;
+    color: $color_white;
+}
+%secondary-bg{
+    background-color: $color_secondary;
+    color: $color_white;
+}
+
+%primary-anchor-text{
+    @extend %primary-color;
+    &:visited{
+        @extend %primary-color;
+    }
+    &:hover{
+        @extend %secondary-color;
+    }
+}

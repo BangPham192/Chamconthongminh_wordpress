@@ -1,0 +1,20 @@
+%tag-caption{
+    .#{$prefix}-tag-caption{
+        padding: 0 15px;
+        line-height: $top_bar_height;
+        height: $top_bar_height;
+        position: relative;
+        margin-right: 10px;
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: -26px;
+            transform: translateY(-50%);
+            border-color: transparent transparent transparent $color_primary;
+            border-style: solid;
+            border-width: 13px;
+        }
+    }
+}

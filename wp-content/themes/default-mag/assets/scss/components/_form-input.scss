@@ -1,0 +1,27 @@
+.comment-form{
+    textarea,input[type=text],input[type=email],input[type=url]{
+        width: 100%;
+        @include border();
+        border-color: $color_light_gray;
+        padding: 10px 15px;
+    }
+    
+    
+    input[type=submit]{
+        display: inline-block;
+        @extend %secondary-bg;
+        padding: 0 30px;
+        height: 40px;
+        line-height: 36px;
+        @include border(2px,solid);
+        @extend %secondary-border;
+        @include transition();
+        font-family: $secondary_font;   
+        font-size: 1rem;
+        &:hover{
+            @extend %primary-bg;
+            @extend %primary-border;
+        }
+      
+    }
+}

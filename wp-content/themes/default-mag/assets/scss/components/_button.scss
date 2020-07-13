@@ -1,0 +1,29 @@
+%btn{
+    padding: 0 30px;
+    height: 34px;
+    line-height: 34px;
+    display: inline-block;
+    font-weight: $font_semi_bold;
+    @extend %primary-bg;
+    font-size: 1rem;
+    &:visited{
+        color: $color_white;
+    }
+}
+.#{$prefix}-btn{
+    padding: 0 30px;
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+    font-weight: $font_semi_bold;
+    &.#{$prefix}-primary-btn{
+        background-color: $color_primary;
+        color: $color_white;
+    }
+}
+.nav-previous,
+.nav-next{
+    a{
+        @extend %btn;
+    }
+}

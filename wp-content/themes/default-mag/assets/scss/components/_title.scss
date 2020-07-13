@@ -1,0 +1,63 @@
+
+.widget-title,
+.entry-title,
+.page-title,
+.#{$prefix}-post-title,
+.#{$prefix}-section-title,
+.#{$prefix}-widget-title{
+    a{
+        word-break: break-word;
+    } 
+}
+.widget-title,
+.#{$prefix}-section-title{
+    font-size: 22px;
+}
+.#{$prefix}-post-title,
+.#{$prefix}-widget-title,
+.#{$prefix}-section-title-sm{
+    font-size: 16px;
+   
+}
+.#{$prefix}-post-title-md,
+.#{$prefix}-widget-title-md,
+.#{$prefix}-section-title-md{
+    font-size: 18px;
+}
+.#{$prefix}-post-title-sm,
+.#{$prefix}-widget-title-sm{
+    font-size: 0.8rem;
+}
+.#{$prefix}-title{
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    padding-bottom: 10px;
+    line-height: 1;
+    &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 40px;
+        height: 3px;
+        @extend %primary-bg;
+    }
+    i{
+        padding-left: 15px;
+    }
+    &.#{$prefix}-sm-title{
+        font-size: 1.2rem;
+    }
+}
+.#{$prefix}-secondary-title{
+    margin: 0;
+    @include border-bottom(2px,solid);
+    border-color: $color_light_gray;
+    padding-bottom: 10px;
+    position: relative;
+    .#{$prefix}-post-format-icon{
+        position: relative;
+    }
+}

@@ -1,0 +1,23 @@
+.slick-dots{
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    li{
+        display: inline-block;
+        height: 14px;
+        width: 14px;
+        @include border(2px,solid);
+        @extend %primary-border;
+        overflow: hidden;
+        margin-right: 5px;
+        background-color: $color_white;
+        border-radius: 100%;
+        button{
+           display: none;
+        }
+        &.slick-active{
+            width: 16px;
+            height: 16px;
+        }
+    }
+}

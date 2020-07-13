@@ -1,0 +1,26 @@
+%tag-item{
+    .#{$prefix}-tags-items{
+        @extend %reset-ul;
+       
+        li{
+            float: left;
+            a{
+                display: inline-block;
+                text-decoration: none;
+                padding: 0 15px;
+                font-weight: $font_semi_bold;
+                font-size: 12px;
+                line-height: $top_bar_height;
+                color: $color_black;
+                &:visited{
+                    color: $color_black;
+                }
+                &:hover{
+                    color: $color_primary;
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,37 @@
+.#{$prefix}-breadcrumbs{
+    background-color: #D5D5D5;
+    font-weight: $font_semi_bold;
+    ul{
+        @extend %reset-ul;
+        @extend %clearfix;
+        li{
+            float: left;
+            padding: 10px 30px 10px 0;
+            position: relative;
+            color: $color_black;
+            a{
+                color: $color_black;
+                &:visited{
+                    color: $color_black;
+                }
+                &:hover{
+                    color: $color_secondary;
+                }
+            }
+            &:after{
+                content: '\f054';
+                display:block;
+                font-family: fontAwesome;
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:last-child{
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
+}

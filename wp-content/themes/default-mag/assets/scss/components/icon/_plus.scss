@@ -1,0 +1,36 @@
+$close-icon-sm-width: 20px;
+$close-icon-default-width: 25px;
+
+.#{$prefix}-plus-icon{
+    width: 50px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 50px;
+    &.#{$prefix}-close-icon-sm{
+        width: $close-icon-sm-width;
+        span{
+            width: $close-icon-sm-width;
+        }
+    }
+    span{
+        display: block;
+        position: absolute;
+        width: $close-icon-default-width;
+        height: 3px;
+        z-index: 1;
+        top: 50%;
+        border-radius: 5px;
+        @extend %primary-bg;
+        transform :rotate(0deg);
+        &:last-child{
+            transform:rotate(90deg);
+        }
+    }
+    &.#{$prefix}-close-icon-white{
+        span{
+            background-color: $color_white;
+        }
+    }
+          
+}  

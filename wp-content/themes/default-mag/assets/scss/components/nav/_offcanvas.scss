@@ -1,0 +1,48 @@
+.#{$prefix}-offcanvas-sidebar-wrapper{
+    padding-top: 15px;
+    background-color: $color_white;
+    color: $color_black;
+    .#{$prefix}-offcanvas-close-icon{
+        margin-bottom: 15px;
+        text-align: right;
+    }
+    a{
+        color: $color_black;
+        &:visited{
+            color: $color_black;
+        }
+        &:hover{
+            color: $color_primary;
+        }
+    }
+    .container{
+        padding: 0;
+    }
+}
+.sidr-open{
+    .#{$prefix}-navigation{
+        .#{$prefix}-nav-off-canvas{
+            .#{$prefix}-menu-icon{
+                
+                &:before{
+                    content: none;
+                }
+                span{
+                    &:before,
+                    &:after{
+                        top: 8px;
+                        @extend %primary-bg;
+                        width: 80%;
+                        height: 3px;
+                    }
+                    &:before{
+                        transform: rotate(45deg)
+                    }
+                    &:after{
+                        transform: rotate(135deg);
+                    }
+                }
+            }
+        }
+    }
+}

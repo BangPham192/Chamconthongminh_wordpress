@@ -1,0 +1,48 @@
+li{
+    &.#{$prefix}-recent-widget{
+        display: flex;
+        flex-wrap: wrap;
+        .#{$prefix}-image-section{
+            flex: 0 0 100px;
+            max-width: 100px;
+            .data-bg{
+                display: flex;
+                align-items: flex-end;
+                background-color: $color_light_gray;
+                .#{$prefix}-unit{
+                    display: block;
+                    height: 30px;
+                    width: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                }
+            }
+
+        }
+        .#{$prefix}-description{
+            flex: 0 0 calc( 100% - 100px);
+            max-width: calc( 100% - 100px);
+            padding-left: 10px;
+            .#{$prefix}-author-desc{
+                @extend %primary-color;
+            }
+            .#{$prefix}-widget-title{
+                margin:0;
+                padding-top: 5px;
+                a{
+                    @include line-limit(3);
+                }
+            }
+
+        }
+        .#{$prefix}-post-description{
+            p{
+                margin-top: 10px;
+            }
+        }    
+
+    }
+}
+.#{$prefix}-home-widget-section .widget ul li.twp-recent-widget:first-child{
+    padding-top: 15px;
+}

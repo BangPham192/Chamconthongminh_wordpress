@@ -1,0 +1,37 @@
+.#{$prefix}-pagination-numeric{
+    text-align: center;
+    .page-numbers{
+        display: inline-block;
+        @include border(2px,solid);
+        padding: 0 10px;
+        border-color: $color_light_gray;
+        height: 34px;
+        line-height: 30px;
+        font-weight: $font_semi_bold;
+        margin-right: 5px;
+        background-color: $color_white;
+        color: $color_black;
+        &:hover{
+            color: $color_white;
+            @extend %secondary-bg;
+            @extend %secondary-border;
+        }
+        &:visited{
+            color: $color_black;
+        }
+        &.current{
+            @extend %primary-bg;
+            @extend %primary-border;
+            &:hover{
+                color: $color_white;
+            }
+
+        }
+    }
+    .prev,.next{
+        &.page-numbers{
+            @extend %btn;
+            border: 0;
+        }
+    }
+}

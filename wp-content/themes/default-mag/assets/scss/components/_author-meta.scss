@@ -1,0 +1,31 @@
+.#{$prefix}-author-desc{
+    display: flex;
+    align-items: center;
+    font-weight: $font_semi_bold;
+    flex-wrap: wrap;
+    span{
+        display: inline-block;
+        margin-right: 15px;
+        padding-top: 5px;
+        &:last-child{
+            margin-right: 0;
+        }
+        span{
+            margin-right: 5px;
+            padding-top: 0;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    .#{$prefix}-single-post-author{
+        .#{$prefix}-author-image{
+            width: 35px;
+            vertical-align: middle;
+            img{
+                border-radius: 100%;
+            }
+        }
+    }
+    
+}

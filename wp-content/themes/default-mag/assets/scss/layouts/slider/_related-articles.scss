@@ -1,0 +1,40 @@
+.#{$prefix}-related-articles-slider-section{
+    padding: 30px 0;
+    .#{$prefix}-title{
+        margin-bottom: 15px;
+        margin-left: 5px;
+        color: $color_black;
+    }
+}
+
+.#{$prefix}-related-articles-slider{
+    .#{$prefix}-related-articles{
+        padding: 0 5px;
+        position: relative;
+        .data-bg-md{
+           background-color: rgb(123,123,123);
+        }
+      
+    }
+    .slick-arrow{
+        top: 27%;
+        transform: translateY(0);
+        background-color: $color_white;
+        border-radius: 0;
+        
+        &:hover{
+            &::before{
+                border-color: $color_primary;
+            }
+        }
+
+    }
+    .slick-prev{
+        left: 5px;
+      
+    }
+    .slick-next{
+        right: 3px;
+    }
+    
+}

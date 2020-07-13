@@ -1,0 +1,43 @@
+@import 'default';
+
+@import 'helpers/master';
+@import 'base/master';
+@import 'components/master';
+@import 'layouts/master';
+@import 'pages/master';
+@import 'color/master';
+@import 'night-mode';
+
+
+.boxed-layout{
+    max-width: 1140px;
+    margin: 0 auto;
+    border: 2px solid $color_light_gray;
+ }
+ #scroll-top{
+     display: none;
+     @include media(sm){
+        position: fixed;
+        z-index: 1;
+        right: -200px;
+        display: block;
+    }
+    &.show{
+        right: 15px;
+        @include media(lg){
+            right: 30px;
+        }
+    }
+    span{
+        @extend %secondary-bg;
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: 20px;
+        @include media(lg){
+            padding: 10px 15px;
+        }
+    }
+
+ }
+
+

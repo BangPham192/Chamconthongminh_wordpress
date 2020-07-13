@@ -1,0 +1,17 @@
+html{
+    font-size: $root_font_size;
+    font-family: $root_font;
+    font-weight: $font_normal;
+    body{
+        color: $color_black;
+        font-family: $root_font;
+        &.dark{
+            background-color: $color_black;
+            color: $color_white;
+        }
+    }
+}
+
+h1,h2,h3,h4,h5,h6,input,.#{$prefix}-secondary-font{
+    font-family: $secondary_font; 
+}

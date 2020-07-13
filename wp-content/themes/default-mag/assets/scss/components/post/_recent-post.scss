@@ -1,0 +1,36 @@
+.#{$prefix}-recent-post{
+    display: flex;
+    @include border-top();
+    border-color: $color_light_gray;
+    padding: 15px 0;
+    &:first-child{
+      border-top: 0;
+    }
+    .#{$prefix}-unit{
+        flex: 0 0 10%;
+        max-width: 10%;
+        font-size: 25px;
+        font-weight: $font_semi_bold;
+        display: flex;
+        align-items: center;
+    }
+    .#{$prefix}-desc{
+        flex: 0 0 calc(90% - 120px );
+        max-width: calc(90% - 120px ); 
+        padding: 0 10px;
+        .#{$prefix}-post-title{
+            margin: 0;
+            a{
+                @include line-limit(2);
+            }
+        }
+       
+    }
+   
+    .#{$prefix}-image-section{
+        flex: 0 0 120px;
+        max-width: 120px;
+        position: relative;
+    }
+    
+}

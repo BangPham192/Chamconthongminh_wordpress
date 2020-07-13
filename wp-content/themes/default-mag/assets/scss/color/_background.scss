@@ -1,0 +1,15 @@
+.#{$prefix}-default-bg{
+    background-color: $color_light_gray;
+}
+.#{$prefix}-primary-bg{
+    background-color: $color_primary;
+    color: $color_white;
+}
+.#{$prefix}-bg-primary-opacity{
+    background-color: rgba($color_primary,0.6);
+    color: $color_white;
+}
+.#{$prefix}-secondary-bg-opacity{
+    background-color: rgba($color_secondary,0.8);
+    color: $color_white;
+}

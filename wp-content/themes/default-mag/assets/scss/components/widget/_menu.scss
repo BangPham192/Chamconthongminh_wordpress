@@ -1,0 +1,37 @@
+.widget{
+    ul{
+        @extend %reset-ul;
+        font-weight: $font_semi_bold;
+        li{
+            padding: $widget-padding 0;
+            @include border-bottom();
+            border-color: $color_light_gray;
+            // color: $color_gray;
+            &:last-child{
+                border-bottom: 0;
+                padding-bottom: 0;
+            }
+            &:first-child{
+                padding-top: 0;
+            }
+            a{
+                // color: $color_gray;
+                &:hover{
+                    @extend %secondary-color;
+                }
+            }
+            ul{
+                margin-top: $widget-padding;
+                @include border-top();
+                border-color: $color_light_gray;
+                li{
+                    padding: 10px 30px 10px 15px;
+                    &:first-child{
+                        padding-top: 10px;
+                    }
+                   
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.#{$prefix}-footer{
+    background-color: rgba($color_black,0.4);
+    color: $color_white;
+    padding: 15px 0;
+    &.#{$prefix}-m-5{
+        margin-bottom: 50px;
+    }
+    a{
+        color: $color_white;
+        text-decoration: none;
+        &:visited{
+            color: $color_white;
+        }
+        &:hover{
+           @extend %secondary-color;
+        }
+
+    } 
+    li{
+        a{
+            &:hover{
+                @extend %secondary-color;
+            }
+        }
+    }
+   .#{$prefix}-footer-menu{
+       text-align: left;
+       padding-top: 10px;
+       @include media(md){
+           text-align: right;
+           padding-top: 0;
+       }
+   }
+
+}
+.footer-active{
+    &.show{
+        margin-bottom: 50px;
+    }
+}

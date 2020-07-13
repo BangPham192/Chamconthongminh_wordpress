@@ -1,0 +1,97 @@
+.#{$prefix}-home-widget-section{
+    section{
+        margin: 0;
+        padding: 15px 0 45px;
+        box-shadow: none;
+        @include border-top();
+        border-color: $color_light_gray;
+        .widget-title{
+            margin: 0;
+            padding-top: 30px;
+        }
+    }
+    .#{$prefix}-home-page-widget-style-1-section{
+        .#{$prefix}-widget-post-list-section{
+            @include border();
+            border-color: $color_light_gray;
+            padding: 0 15px;
+        }
+    }
+    .default_mag_fullwidth_post_widget_style_1,
+    .default_mag_fullwidth_post_widget_style_2{
+        .#{$prefix}-full-post,
+        .#{$prefix}-widget-post-list-section,
+        .#{$prefix}-feature-post-list,
+        .#{$prefix}-ad-image-section{
+            margin-top: 30px;
+        }
+    }
+  
+    .default_mag_fullwidth_post_widget_style_2{
+        .#{$prefix}-post-with-categories-list{
+            margin-top: 30px;
+        }   
+        .#{$prefix}-ad-image-section{
+            text-align: center;
+            a{
+                display: block;
+                @include media(xs){
+                    width: 50%;
+                    margin: 0 auto;
+                }
+                @include media(lg){
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+    .default_mag_popular_post_widget,
+    .default_mag_widget_tabbed{
+        .#{$prefix}-recent-widget-list{
+            @include media(sm){
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: -7.5px;
+                margin-right: -7.5px;
+            }
+            li{
+                @include media(sm){
+                    flex: 0 0 calc(50% - 15px);
+                    max-width: calc(50% - 15px);
+                    margin-left: 7.5px;
+                    margin-right: 7.5px;
+                }
+            }
+        }
+    }
+    .default_mag_widget_tabbed{
+        .section-head{
+            padding-top: 15px;
+            ul{
+                @include border-top();
+                @include border-left();
+                @include border-right();
+                border-color: $color_light_gray;
+            }
+        }
+    }
+    .default_mag_author_widget{
+        padding-top: 45px;
+        .widget-title{
+            padding-top: 15px;
+        }
+        .#{$prefix}-author-bio{
+            text-align: center;
+        }
+        .#{$prefix}-author-wrapper{
+            box-shadow: 0 0 11px 5px rgba($color_box_shadow,0.7);
+            padding: 0 15px 15px;
+            @include media(sm){
+                max-width: 400px;
+                margin: auto;
+            }
+        }
+    }
+
+}

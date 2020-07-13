@@ -1,0 +1,15 @@
+.widget{
+    &.default_mag_social_widget{
+        .widget-title{
+            margin-bottom: 0;
+        }
+    }
+    ul{
+        &.#{$prefix}-widget-social-icons-rounded{
+            li{
+                border-bottom: 0;
+                padding: $widget-padding 5px 0 0;
+            }
+        }
+    }
+}

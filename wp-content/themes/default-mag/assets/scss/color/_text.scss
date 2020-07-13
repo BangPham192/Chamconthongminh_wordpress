@@ -1,0 +1,43 @@
+.#{$prefix}-primary-color{
+    color: $color_primary; 
+}
+
+.#{$prefix}-secondary-color{
+    color: $color_secondary;
+}
+.#{$prefix}-default-color{
+    color: $color_black;
+}
+a{
+    color: $color_black;
+    text-decoration: none;
+    cursor: pointer;
+    @include transition();
+    &:visited{
+        color: $color_black;
+    }
+    &:hover{
+        color: $color_secondary;
+    }
+    &.#{$prefix}-white-anchor-text{
+        color: $color_white;
+        &:visited{
+            color: $color_white;
+        }
+        &:hover{
+            color: $color_secondary;
+        }
+    }
+   
+}
+  
+
+p{
+    a{
+        @extend %secondary-color;
+        &:hover{
+            @extend %primary-color;
+        }
+    }
+}
+

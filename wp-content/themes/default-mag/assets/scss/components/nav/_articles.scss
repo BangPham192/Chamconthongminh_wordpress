@@ -1,0 +1,22 @@
+.#{$prefix}-navigation{
+    .#{$prefix}-articles-list{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 0;
+        width: 100%;
+        overflow: hidden;
+        @include transition();
+        z-index: 1;
+        &.#{$prefix}-open{
+            height: 80vh;
+            overflow: scroll;
+            padding: 30px; 
+            @include media(sm){
+                height: initial;
+                overflow: visible;
+            }
+        }
+        
+    }
+}

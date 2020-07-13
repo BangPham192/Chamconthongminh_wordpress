@@ -1,0 +1,31 @@
+.#{$prefix}-single-author-info{
+    .#{$prefix}-author-avatar,
+    .#{$prefix}-author-description{
+        margin-top: 30px;
+    }
+    .#{$prefix}-author-avatar{
+        flex: 0 0 100px;
+        max-width: 100px;
+        img{
+           box-shadow: 0 0 5px 5px rgba($color_box_shadow,0.6) ;
+           padding: 15px;
+           border-radius: 5px;
+        }
+    }
+    .#{$prefix}-author-description{
+        flex: 0 0 calc( 100% -100px);
+        max-width: calc( 100% - 100px);
+        .#{$prefix}-author-name{
+            font-size: 1.2rem;
+            font-weight: $font_bold;
+
+        }
+        .#{$prefix}-title{
+            margin-top: 0;
+        }
+        .#{$prefix}-author-email{
+            padding: 10px 0;
+            font-style: italic;
+        }
+    }
+}

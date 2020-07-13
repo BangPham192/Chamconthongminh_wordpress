@@ -1,0 +1,166 @@
+/*
+Theme Name: Default Mag
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+
+/*
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+*/
+.rtl .float-left,.rtl .wp-block-image .alignleft{
+	float: right;
+}
+.rtl .float-right{
+	float: left;
+}
+.rtl .twp-top-bar .twp-header-tags .twp-tag-caption:after{
+	right: inherit;
+	left: -26px;
+	transform: translateY(-50%) rotate(180deg);
+}
+.rtl .twp-title:after,.rtl .widget-title:after{
+	left: initial;
+	right: 0;
+}
+.rtl li.twp-post-with-categories .twp-description{
+	padding-left: 0;
+	padding-right: 10px;
+}
+.rtl .twp-author-desc span,.rtl .twp-author-desc span:last-child{
+	margin-right: 15px;
+}
+.rtl .twp-author-desc span:first-child{
+	margin-right: 0;
+}
+.rtl .twp-categories ul li a{
+	padding-right: 0;
+	padding-left: 10px;
+}
+.rtl .twp-categories.twp-categories-with-bg ul li a{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+@media screen and (min-width: 768px){
+	.rtl .twp-comments-section .comment-respond .comment-form p{
+		padding-right: 0px;
+		padding-left: 10px;
+
+	} 
+	.rtl .twp-comments-section .comment-respond .comment-form p a{
+		margin-right: 0;
+		margin-left: 10px;
+	}
+	.rtl .twp-comments-section .comment-respond .comment-form p a:last-child{
+		margin-left: 0;
+	}
+}
+.rtl .fa-chevron-right:before{
+	content: '\f053';
+}
+.rtl .twp-title i{
+	padding-left: 0;
+	padding-right: 15px;
+}
+.rtl .twp-single-next-post .twp-time i{
+	padding-left: 5px;
+	padding-right: 0;
+}
+.rtl .twp-footer-menu ul li:last-child a{
+	padding-right: 15px;
+}
+
+/* ticker */
+@media screen and ( min-width: 1050px){
+	.rtl .twp-ticker-pin-slider-section .twp-ticker-close{
+		left: initial;
+		right: 0;
+	}
+}
+.rtl .twp-ticker-pin-slider-section h4 {
+	float: right;
+	margin: 0 60px 0 0;
+}
+.rtl .twp-ticker-pin-slider-section h4:before{
+	border-style: solid;
+	border-width: 0 20px 50px 0;
+	border-color: transparent #c20017 transparent transparent;
+}
+.rtl .twp-ticker-pin-slider-section h4:after{
+	border-style: solid;
+	border-width: 50px 0 0 20px;
+	border-color:  transparent  transparent  transparent #c20017;
+}
+
+/* slider */
+.rtl .twp-related-articles-slider .slick-prev{
+	padding-right: 8px;
+}
+.twp-related-articles-slider .slick-next{
+	padding-right: 15px;
+}
+
+/* breadcrum */
+.rtl .twp-breadcrumbs ul li{
+	float: right;
+	padding: 10px 0 10px 30px;
+}
+.rtl .twp-breadcrumbs ul li:after{
+	content: '\f053';
+	right: inherit;
+	left: 10px;
+}
+/* nav menu */
+.twp-navigation .twp-nav-left-content .twp-menu-section .menu > ul .down-arrow > a{
+	padding: 0 15px 0 30px;
+}
+.twp-navigation .twp-nav-left-content .twp-menu-section .menu > ul li.menu-item-has-children a:after{
+	right: initial;
+	left: 10px;
+}
+.twp-navigation .twp-nav-left-content .twp-menu-section .menu > ul li .sub-menu a:before{
+	left: inherit;
+	right: -1px;
+} 
+.twp-navigation .twp-nav-left-content .twp-menu-section .menu > ul .right-arrow > a:after{
+	content: '\f053';
+}
+.rtl .twp-navigation .twp-nav-left-content .twp-menu-section .menu > ul li .sub-menu {
+	left: inherit;
+	padding: 0;
+	right: 0;
+	display: none;
+	border-left-style: 0;
+	border-right-width: 1px;
+	border-right-style: solid;
+
+}
+.rtl .twp-navigation .twp-nav-left-content .twp-menu-section .menu > ul>li:hover >.sub-menu {
+	display: block;
+}
+.rtl .twp-navigation .twp-nav-left-content .twp-menu-section .menu > ul li .sub-menu .sub-menu{
+	left: inherit;
+	right: 100%;
+}
+.rtl .twp-navigation .twp-nav-left-content .twp-menu-section .menu > ul li .sub-menu li:hover >.sub-menu{
+	display: block;
+}
+
+/* trending */
+.rtl .twp-articles-list .twp-article-header .twp-close-icon-section{
+	right: inherit;
+	left: 0;
+}
+
+/* search */
+.rtl .twp-search-field-wrapper .twp-close-icon-section{
+	padding-left: 0;
+	padding-right: 10px;
+}

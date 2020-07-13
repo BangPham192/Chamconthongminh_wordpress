@@ -1,0 +1,31 @@
+$widget-padding: 15px;
+.widget{
+    padding: 0 $widget-padding $widget-padding;
+    box-shadow: 0 0 11px 5px rgba($color_box_shadow,0.7);
+    margin-bottom: 15px; 
+    &:last-child{
+        margin-bottom: 0;
+    }
+    h2,.widget-title{
+        margin-top: 0;
+        margin-bottom: $widget-padding;
+        position: relative;
+        padding: $widget-padding 0;
+        line-height: 1;
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 25px;
+            height: 3px;
+            @extend %primary-bg;
+        }
+    }
+   
+    select{
+        width: 100%;
+    }
+   
+}

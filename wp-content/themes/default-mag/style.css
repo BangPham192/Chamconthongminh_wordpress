@@ -4410,11 +4410,11 @@ a:hover {
 }
 .background-image-size {
   background-size: contain !important;
-  background-position: right;
-  margin-right: 325px;
+  /* background-position: right;
+  margin-right: 325px; */
 }
 .twp-logo{
-	display: none;
+	/* display: none; */
 }
 
 /*# sourceMappingURL=style.css.map */

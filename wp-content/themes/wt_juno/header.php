@@ -78,8 +78,11 @@
 			<div class="logo">			
 				<?php if (wt_get_option( 'wt_logo_url' )) { ?>
 					<h1>
-						<a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>">
+						<!-- <a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>">
 							<img src="<?php echo wt_get_option( 'wt_logo_url' ); ?>" alt="<?php bloginfo( 'name' ); ?>" />
+						</a> -->
+						<a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>">
+							<img src="https://chamconthongminh.com/wp-content/uploads/2020/08/newnewlogo.png" alt="<?php bloginfo( 'name' ); ?>" />
 						</a>
 					</h1>	
 				<?php } else {?>

@@ -60,7 +60,7 @@ a:visited {
 } 
 
 a:hover {
-	color: #2BBFF6;
+	color: #e23e57;
 }
 
 /*-- Headings --*/
@@ -249,17 +249,17 @@ h6 {
 
 /*-- main colors --*/
 .main-color{
-	color: #2BBFF6;
+	color: #e23e57;
 }
 
 .main-color-bg{
-	background: #2BBFF6;
+	background: #e23e57;
 }
 
 /* 2. HEADER
  * ========================= */	
 #header{
-	background: #494949;
+	background: #f85f73;
 	border-top: 10px solid #3a3a3a;
 	overflow: hidden;
 	padding: 5px 0;	
@@ -271,12 +271,12 @@ h6 {
 }
 
 #header .logo{
-	margin-top: 7px;	
-	max-width: 150px;
-	max-height: 50px;
-	float: left;
-	overflow: hidden;
-	margin-right: 40px;
+	margin-top: -6px;
+    max-width: 348px;
+    max-height: 66px;
+    float: left;
+    overflow: hidden;
+    margin-right: 40px;
 }
 
 #header .logo h1{
@@ -339,7 +339,7 @@ h6 {
 	border: none;
 	font: inherit;
 	color: #999999;
-	background: #3A3A3A;
+	background: #fff;
 	padding: 7px 10px 8px;
 }
 
@@ -443,8 +443,8 @@ h6 {
 /* 3. NAVIGATION MENU
 =========================== */
 #main-menu {
-	background: #20C1EA;
-	border-bottom: 4px solid #1FB6DC;
+	background: #e23e57;
+	border-bottom: 4px solid #fff;
 	display: none;	
 	width: 100%;
 	position: relative;
@@ -504,7 +504,7 @@ h6 {
 #main-menu .current-menu-item ,
 #main-menu .current_page_item,
 #main-menu ul li a:hover{
-	background: #1FB6DC;
+	background: #f85f73;
 }
 
 #main-menu ul li ul {
@@ -526,7 +526,7 @@ h6 {
 	width: 142px;	
 	text-align: left;
 	height: auto;	
-	background: #1FB6DC;
+	background: #f85f73;
 	font-size: 14px;	
 	font-weight: 600;	
 	color: #FFFFFF;	
@@ -536,7 +536,7 @@ h6 {
 #main-menu ul li ul li:hover a, 
 #main-menu ul li ul li.over a {	
 	color: #FFFFFF;
-	background: #2BBFF6;
+	background: #e23e57;
 }
 
 #main-menu ul li ul li ul {	
@@ -742,7 +742,7 @@ h6 {
 }
 
 .entry-meta .author a{
-	color: #2BBFF6;
+	color: #f85f73;
 }
 
 .entry-meta .author a:hover{
@@ -1117,7 +1117,7 @@ h3.archive-title{
 	padding-bottom: 7px;
 	overflow: hidden;
 	margin-bottom: 20px;
-	border-bottom: 5px solid #2BBFF6;
+	border-bottom: 5px solid #e23e57;
 }
 
 .archive-desc{
@@ -1146,7 +1146,7 @@ h3.archive-title{
 	overflow: hidden;
 	margin-bottom: 20px;
 	padding-bottom: 10px;
-	border-bottom: 5px solid #2BBFF6;
+	border-bottom: 5px solid #e23e57;
 }
 
 .post-nav h6{
@@ -1883,7 +1883,7 @@ h3.archive-title{
 }
 
 #respond input[type=submit]{
-	background: #2BBFF6;
+	background: #e23e57;
 	color: #FFFFFF !important;
 	cursor: pointer;
 	font: inherit;
@@ -2291,7 +2291,7 @@ h3.archive-title{
 
 /*-- Tags widget --*/
 .tagcloud a {
-	background: #2BBFF6;	
+	background: #f85f73;	
 	color: #FFFFFF;
 	display: inline-block;
 	font-size: 13px !important;
@@ -2301,7 +2301,7 @@ h3.archive-title{
 }
 
 .tagcloud a:hover {
-    background: #393939;
+    background: #e23e57;
     color: #FFFFFF;
 }
 
@@ -2648,7 +2648,7 @@ h3.archive-title{
  * ======================== */	
 #footer{
 	background: #494949;	
-	border-top: 10px solid #2BBFF6;
+	border-top: 10px solid #e23e57;
 }
 
 #footer a{
@@ -2776,7 +2776,7 @@ h3.archive-title{
 }
 
 #footer .footer-info{
-	background: #3A3A3A;
+	background: #fff;
 	padding: 10px 0;
 }
 

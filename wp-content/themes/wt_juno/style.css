@@ -871,7 +871,7 @@ h6 {
 }
 
 .entry-footer .tags a:hover{
-	background: #2BBFF6;
+	background: #e23e57;
 	color: #FFFFFF;
 }
 
@@ -2678,10 +2678,11 @@ h3.archive-title{
 }
 
 #footer .widget h4{
-	margin-bottom: 10px;
-	padding-bottom: 7px;
-	color: #FFFFFF;
-	border-bottom: 4px solid #444444;
+    margin-bottom: 10px;
+    padding-bottom: 7px;
+    color: #FFFFFF;
+    border-bottom: 1.5px solid #e23e57;
+    width: 96px;
 }
 
 #footer .widget ul{
@@ -2776,13 +2777,17 @@ h3.archive-title{
 }
 
 #footer .footer-info{
-	background: #fff;
+	background: #3A3A3A;
 	padding: 10px 0;
 }
 
 #footer .footer-info{
 	overflow: hidden;
 	
+}
+
+#footer > .footer-widgets > .inner-wrap > div:not(.col-first){
+	margin-top: 36px;
 }
 
 /* 10. MEDIA QUERIES

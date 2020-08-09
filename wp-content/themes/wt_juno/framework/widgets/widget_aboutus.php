@@ -74,13 +74,16 @@ class wellthemes_aboutus_widget extends WP_Widget {
 	   
 	   <div class="widget-social-links">
 		   <ul>
-			   <?php if(!empty($twitter_url)){	?>
-					<li><a class="twitter" href="<?php echo $twitter_url; ?>" target="_blank">Twitter</a></li>
-				<?php
-				} 
-				
-				if(!empty($facebook_url)){	?>
+			   <?php if(!empty($facebook_url)){	?>
 					<li><a class="fb" href="<?php echo $facebook_url; ?>" target="_blank">Facebook</a></li>
+				<?php }
+
+				if(!empty($youtube_url)){	?>
+					<li><a class="youtube" href="<?php echo $youtube_url; ?>" target="_blank">Youtube</a></li>
+				<?php }
+
+				if(!empty($linkedin_url)){	?>
+					<li><a class="linkedin" href="<?php echo $linkedin_url; ?>" target="_blank">Linkedin</a></li>
 				<?php }
 				
 				if(!empty($gplus_url)){	?>
@@ -95,17 +98,9 @@ class wellthemes_aboutus_widget extends WP_Widget {
 				if(!empty($dribbble_url)){	?>
 					<li><a class="dribbble" href="<?php echo $dribbble_url; ?>" target="_blank">Dribbble</a></li>
 				<?php }
-										
-				if(!empty($linkedin_url)){	?>
-					<li><a class="linkedin" href="<?php echo $linkedin_url; ?>" target="_blank">Linkedin</a></li>
-				<?php }
 				
 				if(!empty($flickr_url)){	?>
 					<li><a class="flickr" href="<?php echo $flickr_url; ?>" target="_blank">Flickr</a></li>
-				<?php }
-				
-				if(!empty($youtube_url)){	?>
-					<li><a class="youtube" href="<?php echo $youtube_url; ?>" target="_blank">Youtube</a></li>
 				<?php }
 				
 				if(!empty($rss_url)){	?>

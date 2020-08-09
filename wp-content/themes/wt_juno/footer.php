@@ -16,7 +16,7 @@
 		<div class="footer-widgets">
 			<div class="inner-wrap">
 			
-				<div class="col col-290">			
+				<div class="col col-290 col-first">			
 					<?php 
 						if ( ! dynamic_sidebar( 'footer-1' ) ) : 			
 						endif;
@@ -48,13 +48,16 @@
 			
 		</div><!-- /footer-widgets -->
 		
-		<div class="footer-info">
+		 <div class="footer-info">
 			<div class="inner-wrap">
-				<?php if (wt_get_option( 'wt_footer_text_left' )){ ?> 
+				<!-- <?php if (wt_get_option( 'wt_footer_text_left' )){ ?> 
 					<div class="footer-left">
 						<?php echo wt_get_option( 'wt_footer_text_left' ); ?>			
 					</div>
-				<?php } ?>
+				<?php } ?> -->
+				<div class="footer-left">
+						©2020 Bản quyền nội dung thuộc về chamconthongminh.com			
+					</div>
 				<?php if ( wt_get_option( 'wt_show_header_social' ) == 1 ) { ?>
 					<div class="social-links">
 						<div class="title"><?php _e('Get connected:', 'wellthemes');?></div>
@@ -83,8 +86,8 @@
 					</div>
 				<?php } ?>
 				
-			</div><!-- /inner-wrap -->			
-		</div> <!--/footer-info -->
+			</div>			
+		</div>
 		
 	</footer><!-- /footer -->
 
